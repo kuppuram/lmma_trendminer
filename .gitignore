@@ -1,0 +1,86 @@
+env_311/
+Readme.txt
+Readme.txt.bak
+README_old.md
+ner_train.jsonl
+ner_eval.jsonl
+test.py
+test1.py
+.\lmma_trendminer\.env
+.\tools\train\convert_ner_data_to_jsonl.py
+.\tools\train\train_ner_final_jsonl.py
+.\tools\train\train_ner_final.py
+.\tools\train\ner_cli.py
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Byte-compiled / compiled / C-extensions
+*.so
+*.dll
+
+# Packaging / build
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# Testing / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Virtualenvs
+.venv/
+venv/
+env*/
+ENV/
+
+# Editors/IDE
+.vscode/
+*.code-workspace
+.idea/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Logs & temp
+*.log
+logs/
+tmp/
+temp/
+
+# Environment / secrets
+.env
+*.env
+.env.*
+
+# Hugging Face / transformers caches (local)
+# (these normally live outside the repo, but ignore just in case)
+huggingface/
+.cache/huggingface/
+
+# --- Project-specific ---
+# Data: ignore big/raw by default, keep tiny samples
+data/*
+!data/.gitkeep
+!data/intent_data.csv
+!data/ner_train.jsonl
+!data/ner_eval.jsonl
+
+# Models: ignore large trained artifacts unless you use Git LFS
+models/*
+!models/.gitkeep
+
+# OpenSearch ingest artifacts (if any temp files)
+tools/ingest/tmp/

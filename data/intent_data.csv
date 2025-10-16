@@ -1,0 +1,53 @@
+text,label
+"show me top trends for last year",trend_analysis
+"what were people saying about coffee in 2012",trend_analysis
+"analyze reviews with a 5 score",trend_analysis
+"find reviews about crunchy snacks",simple_search
+"search for the best dog food",simple_search
+"hello there",greeting
+"how are you",greeting
+"show top trends in baby food for 2011",trend_analysis
+"analyze review trends from apr to may 2011 with 5 score",trend_analysis
+"what were the big themes in coffee reviews in 2012",trend_analysis
+"find patterns in snacks feedback last quarter of 2019",trend_analysis
+"give me trends for pet food from june to aug 2015 (score >=4)",trend_analysis
+"cluster review themes for tea during 2011-11 to 2011-12",trend_analysis
+"highlight emerging trends for energy bars this year",trend_analysis
+"what trends do you see in gluten free products 2013",trend_analysis
+"analyze sentiments and trends for dog treats in 2014",trend_analysis
+"summarize top themes in electronics reviews for may 2011",trend_analysis
+"trends for cereal between sept 2012 and dec 2013",trend_analysis
+"show the most common complaints and praises in june 2011",trend_analysis
+"identify key topics in coffee pods last month (rating >=3)",trend_analysis
+"analyze monthly trend shifts for baby formula 2011-2012",trend_analysis
+"top trends for candy from mar to may with score 4 or above",trend_analysis
+"search for crunchy snack reviews",simple_search
+"find reviews about cat food with rating 5",simple_search
+"show me comments on green tea bags 2011",simple_search
+"lookup customer feedback for brand whiskas",simple_search
+"find coffee pod reviews from november 2011",simple_search
+"show reviews that mention gluten free brownies",simple_search
+"search baby formula reviews with 3 score",simple_search
+"find electronics charger reviews may 2011",simple_search
+"show me reviews that talk about delivery speed",simple_search
+"lookup top rated dog treats",simple_search
+"search for negative reviews on instant oatmeal",simple_search
+"find comments mentioning packaging issue in snacks",simple_search
+"show reviews for decaf coffee 2012",simple_search
+"search reviews about organic peanut butter",simple_search
+"find mentions of stale chips in 2011",simple_search
+"hello there",greeting
+"hi, how are you",greeting
+"good morning",greeting
+"hey!",greeting
+"yo, what's up",greeting
+"hi bot",greeting
+"hello friend",greeting
+"hey there, quick question",greeting
+"good evening",greeting
+"hi again",greeting
+"hello team",greeting
+"hey assistant",greeting
+"morning!",greeting
+"hiya",greeting
+"hello, anyone there?",greeting

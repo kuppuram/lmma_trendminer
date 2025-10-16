@@ -1,0 +1,14 @@
+model_name: "bert-base-uncased"
+output_dir: "./models/ner-extractor"
+train_file: "./data/ner_train.jsonl"      # your BIO-tagged data
+eval_file: "./data/ner_eval.jsonl"
+labels: ["O","B-MONTH","I-MONTH","YEAR","DATE","SCORE","TOPK"]  # adapt to your schema
+hyper:
+  lr: 5e-5
+  epochs: 5
+  batch_size: 16
+  warmup_ratio: 0.1
+  weight_decay: 0.01
+misc:
+  seed: 42
+  fp16: false

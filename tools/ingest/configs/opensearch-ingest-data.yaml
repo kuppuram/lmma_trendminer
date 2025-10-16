@@ -1,0 +1,24 @@
+index: "amazon-food-reviews"
+recreate: false
+settings:
+  index:
+    knn: true
+mappings:
+  properties:
+    text: { type: text }
+    score: { type: float }                 # numeric → supports range
+    timestamp: { type: date }
+    review_embedding:
+      type: knn_vector
+      dimension: 384
+      method: { name: hnsw, engine: faiss }
+source:
+  path: "./data/food_reviews_sample.csv"   # adapt to your file
+  columns:
+    text: "Text"
+    score: "Score"
+    timestamp: "timestamp"
+embed:
+  model: "sentence-transformers/all-MiniLM-L6-v2"
+batch:
+  size: 500

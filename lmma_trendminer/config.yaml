@@ -1,0 +1,41 @@
+version: 1
+
+# You can keep multiple index profiles here and pick one at runtime.
+profiles:
+
+  amazon_food_reviews:
+    index: "amazon-food-reviews"
+    fields:
+      vector: "review_embedding"
+      text: ["text"]
+      timestamp: "timestamp"
+      score:
+        name: "score"      # <-- your actual field
+        type: "keyword"    # "numeric" if int/float; "keyword" if string
+        min: 0
+        max: 5
+        # cast: "string"   # not required as the data is numeric # set to "string" if the index stores "score" as "5", "4", ...
+      # Optional fields (define only if present in your index)
+      category: null                   # e.g., "category"
+      brand: null
+      product: null
+
+    # map user query keywords → MUST query terms
+    query_term_map:
+      electronics: ["electronics"]
+      food: ["food", "foods", "grocery"]
+
+    # synonyms to expand MUST terms (optional)
+    synonyms:
+      electronics: ["electronic", "gadget", "device"]
+      food: ["grocery", "snack", "snacks"]
+
+  # example of another profile (electronics index)
+  amazon_electronics_reviews:
+    index: "amazon-electronics-reviews"
+    fields:
+      vector: "review_embedding"
+      text: ["text", "title"]
+      timestamp: "timestamp"
+      score: { name: "rating", type: "numeric", min: 0, max: 5 }
+      category: "category"

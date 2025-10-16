@@ -1,0 +1,2 @@
+{"tokens": ["product", "trends", "this", "month", "with", "score", "5"], "labels": ["O", "O", "B-DATE", "I-DATE", "O", "O", "B-SCORE"]}
+{"tokens": ["trends", "for", "feb", "2018", "with", "3", "score"], "labels": ["O", "O", "B-MONTH", "B-YEAR", "O", "B-SCORE", "O"]}
